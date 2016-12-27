@@ -11,7 +11,7 @@
 
 Readmore: https://developer.android.com/training/animation/screen-slide.html
 
-PROBLEM: Create button to next or previous fragment.
+PROBLEM: Solve Loop Initified View Paper
 
 ## Version1
 <p align="center">
