@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 
 import com.example.enclaveit.viewpaper.fragment.Korea;
 import com.example.enclaveit.viewpaper.fragment.Turky;
@@ -26,6 +27,19 @@ public class MainActivity extends FragmentActivity {
          * setModel or setAdapter()
          */
         initialisePagin();
+        this.findViewById(R.id.next).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewPager.setCurrentItem(getItem(+1),true);
+            }
+        });
+
+        this.findViewById(R.id.previous).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewPager.setCurrentItem(getItem(-1),true);
+            }
+        });
     }
 
     private void initialisePagin(){
@@ -37,5 +51,9 @@ public class MainActivity extends FragmentActivity {
 
         viewPager = (ViewPager)this.findViewById(R.id.viewPaper);
         viewPager.setAdapter(new PaperAdapter(this.getSupportFragmentManager(),fragments));
+    }
+
+    private int getItem(int i) {
+        return viewPager.getCurrentItem()+i;
     }
 }
