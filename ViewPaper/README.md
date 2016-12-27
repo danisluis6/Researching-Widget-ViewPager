@@ -11,13 +11,9 @@
 
 Readmore: https://developer.android.com/training/animation/screen-slide.html
 
-## Step By Step 
-    
-    - Create one or more fragment and contain folder call other "fragment"
-    Example: 
-
+PROBLEM: Create button to next or previous fragment.
 
 ## Version1
 <p align="center">
-  <img src="https://github.com/danisluis6/Researching-Widget-ViewPager/blob/version1/ViewPaper/1.png">
+  <img src="https://github.com/danisluis6/Researching-Widget-ViewPager/blob/version2/ViewPaper/1.png">
 </p>
